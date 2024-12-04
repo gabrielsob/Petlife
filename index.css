@@ -1,0 +1,213 @@
+/**: Seletor universal, aplicando estilos a todos os elementos HTML.*/
+* {
+    /*box-sizing: border-box;: Define o modelo de caixa para incluir padding e borda no cálculo de largura e altura.*/
+    box-sizing: border-box;
+    /* Define uma fonte padrão para todos os elementos */
+    font-family: "Montserrat", sans-serif;
+    /* Remove margens e preenchimentos padrão */
+    margin: 0;
+    padding: 0;
+}
+
+/* Define a cor do texto para o corpo do documento */
+body {
+    color: #263138;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    /*Define um fundo de cor específica para o cabeçalho.*/
+    background-color: #ff725e;
+    /*Usa um layout flexível para alinhar*/
+    display: flex;
+    /*alinha para o centro*/
+    align-items: center;
+    /*o primeiro item ficará alinhado à esquerda, o último item ficará alinhado à direita*/
+    justify-content: space-between;
+    padding: 24px 80px; /* Define espaçamento interno */
+}
+
+/* Estilos para os links de navegação no cabeçalho */
+header nav a {
+    /*cor da letra*/
+    color: #ffffff;
+    /*fonte*/
+    font-weight: 600;
+    padding: 32px; /* Define espaçamento interno dos links */
+    /*tira a linha de baixo da palavra*/
+    text-decoration: none;
+}
+
+/* Estilos para a seção 'inicio' */
+#inicio {
+    display: flex;
+    align-items: center;
+    /*Ela define o espaço entre as células ou entre os itens dispostos no layout.*/
+    gap: 32px;
+    padding: 24px 80px 128px 80px; /* Define espaçamento interno */
+    /*é usado quando você deseja ajustar a posição de um elemento em relação à sua
+     posição normal na página sem afetar o layout dos outros elementos ao seu redor.*/
+    position: relative;
+}
+
+/* Estilos para os títulos h1 e h2 */
+h1, h2 {
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 32px; /* Define margem inferior */
+}
+
+/* Estilos para parágrafos */
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 32px; /* Define margem inferior */
+}
+
+/* Estilos para botões */
+.botao {
+    background-color: #ff725e;
+    border-radius: 8px;
+    color: #ffffff;
+    padding: 16px 32px; /* Define espaçamento interno dos botões */
+    text-decoration: none;
+}
+
+/* Estilos para botões transparentes */
+.botao-transparente {
+    background-color: transparent;
+    color: #ff725e;
+    padding: 16px 32px; /* Define espaçamento interno dos botões */
+    text-underline-offset: 4px;
+}
+
+/* Posicionamento absoluto de um elemento */
+.absolute {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -18;
+}
+
+/* Estilos para a seção 'clinica' */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px; /* Define espaçamento interno */
+}
+
+/* Estilos para itens de lista dentro da seção 'clinica' */
+#clinica li {
+    margin-bottom: 16px; /* Define margem inferior */
+    margin-left: 32px; /* Define margem esquerda */
+}
+
+/* Estilos para a seção 'farmacia' */
+#farmacia {
+    padding: 64px 80px; /* Define espaçamento interno */
+    text-align: center;
+}
+
+/* Estilos para imagens dentro da seção 'farmacia' */
+#farmacia img {
+    margin: 64px auto; /* Centraliza a imagem horizontalmente */
+}
+
+/* Estilos para parágrafos dentro da seção 'farmacia' */
+#farmacia .paragrafo {
+    max-width: 950px; /* Define largura máxima do parágrafo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Estilos para a seção 'duvidas' */
+#duvidas {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    padding: 64px 80px; /* Define espaçamento interno */
+}
+
+/* Estilos para elementos com a classe 'duvida' */
+.duvida {
+    position: relative;
+}
+
+/* Estilos para os títulos 'h3' dentro da classe 'duvida' */
+.duvida h3 {
+    border: 2px solid #ff725e;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px; /* Define espaçamento interno */
+}
+
+/* Estilos para imagens dentro da classe 'duvida' */
+.duvida img {
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+/* Estilos para parágrafos dentro da classe 'duvida' */
+.duvida .paragrafo {
+    border-right: 1px solid #ff725e;
+    border-bottom: 1px solid #ff725e;
+    border-left: 1px solid #ff725e;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    padding: 0 24px; /* Define espaçamento interno */
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .2s
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: rgba(255, 152, 108, 0.25);
+    display: flex;
+    gap: 80px;
+    padding: 64px 80px; /* Define espaçamento interno */
+}
+
+/* Estilos para imagens e títulos dentro do rodapé */
+footer img,
+footer .titulo {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 24px; /* Define margem inferior */
+}
+
+/* Estilos para links de navegação dentro do rodapé */
+footer nav a {
+    color: #263138;
+    display: block;
+    margin-bottom: 16px; /* Define margem inferior */
+    text-decoration: none;
+}
+
+/* Estilos para parágrafos dentro do rodapé */
+footer p {
+    margin-bottom: 16px; /* Define margem inferior */
+    max-width: 350px; /* Define largura máxima do parágrafo */
+}
+
+/* Estilos para links dentro de parágrafos no rodapé */
+footer p a {
+    color: #263138;
+    text-decoration: none;
+}
+
+/* Estilos para um elemento com o ID 'criado' */
+#criado {
+    background-color: #263138;
+    color: #ffffff;
+    padding: 24px; /* Define espaçamento interno */
+    text-align: center;
+}

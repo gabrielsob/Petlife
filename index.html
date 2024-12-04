@@ -1,0 +1,208 @@
+<!--Declaração do tipo de documento HTML.-->
+<!doctype html>
+<!--Elemento raiz que engloba todo o conteúdo HTML.-->
+<html>
+<!--Contém informações sobre o documento, como título, metadados, links para estilos e scripts.-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Define o título da página exibido na aba do navegador.-->
+<title>PetLife</title>
+<!--descrição da pagina-->
+<meta name="description" content="Garanta uma vida longa e cheia de alegria para o seu melhor amigo">
+
+     <!-- Vincula o arquivo CSS index.css para estilizar a página. -->
+     <link rel="shortcut icon" href="img/logopata.jpg" type="image/jpg">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+    rel="stylesheet">
+
+</head>
+<!--Contém todo o conteúdo visível da página.-->
+<body>
+    <!--Seção de cabeçalho que geralmente contém o logotipo e a navegação.-->
+    <header>
+        <!-- <a>: Cria um link. -->
+        <a href="index.html">
+            <!--<img>: Esta tag é usada para incorporar imagens em uma página HTML.-->
+            <!--alt=:Ele fornece uma descrição textual da imagem para usuários que não podem ver a imagem por motivos como falha-->
+            <img src="img/logo-white.svg" alt="PetLife">
+        </a>
+        <!-- Define a navegação com uma lista de links. -->
+        <nav>
+             <!-- Links de navegação -->
+            <a href="#inicio">Início</a>
+            <a href="#clinica">Clínica</a>
+            <a href="#farmacia">Farmácia</a>
+            <a href="#duvidas">Dúvidas</a>
+        </nav>
+    </header>
+    <!--Contém o conteúdo principal da página.-->
+    <main>
+        <!--<section> Define seções distintas da página.
+
+id="inicio", id="clinica", id="farmacia", id="duvidas": Identificadores únicos para as seções, usados para navegação interna na página.-->
+        <section id="inicio">
+            <!--width="580": Define a largura da imagem em pixels-->
+            <!--Define a altura da imagem em pixels.-->
+            <img src="img/start-img.svg" alt="imagem principal" width="580" height="580">
+            <!--em HTML é usado para criar uma divisão ou seção genérica em uma página web. -->
+            <div>
+                <!--<h1>, <h2>, <h3>: Títulos de diferentes níveis.-->
+                <h1>Garanta uma vida longa e cheia de alegria para o seu melhor</h1>
+                <!--parágrofos de texto-->
+                <p class="paragrafo">A PetLife é o seu refúgio de confiança para o cuidado completo do seu pet. com profissonais
+                dedicados e serviços abrangentes, pferecemos uma experiencia acolhedora e personalidade garantindo, o
+                bem-estar, a saúde e felicidade dos seus animais de estimação</p>
+                <!--target= na tag <a>é usado para definir o comportamento do link quando clicado.-->
+                <!--blank" na tag <a>ele instrui o navegador a abrir o link em uma nova janela ou guia,-->
+                <a class="botao" href="https://wa.me/5522987654321" target="_blank">Marque uma consulta</a>
+                <a class="botao-transparente" href="#clinica">Conheça nossa clínica</a>
+            </div>
+
+            <img class="absolute" src="img/shape.svg" alt="">
+        </section>
+
+        <section id="clinica">
+            <div>          
+            <h2>Cuidado Veterinário de Qualidade</h2>
+            <p class="paragrafo">
+                Nossa clínica Veterinária é o local onde a paixão pelos animais se une á excelencia em cuidados
+                veterinários. 
+                sob a liderança da Dra. Vivien Redi, uma profissional altamente Qualidade e 
+                comprometida, oferecemos serviços de saúde e bem-estar para animais de estimação de todas as 
+                espécies. Venha conhecer nossa clínica e desfrute da atenção personalizada e do carinho que seu pet 
+                merece.
+            </p>
+            <!--<ul> e <li>: Lista não ordenada e seus itens.-->
+                <ul>
+                    <li>Consulta de rotina e exames de saúde abrangentes</li>
+                    <li>Vacinação e imunização</li>
+                    <li>Cirurgias e procedimentos veterinários</li>
+                    <li>Tratamento e controle de doenças</li>
+                    <li>Odontologia Veterinária</li>
+                    <li>Atendimento de emergencia 24 horas</li>
+                    <li>Nutrição e aconselhamento alimentar personalizado</li>
+                </ul>
+        </div>
+            <!--loading= que controla como uma imagem é carregada ou renderizada na página-->
+            <!--lazy indica ao navegador para carregar a imagem apenas quando ela estiver próxima à área visível da página-->
+            <img src="img/clinic-img.svg" alt="" width="480" height="480" loading="lazy">
+        </section>
+
+        <section id="farmacia">
+            <h2>Venha conferir o nosso petshop e farmácia</h2>
+            <img src="img/shop-img.svg" alt="" width="645" height="430" loading="lazy">
+            <p class="paragrafo">
+                Além de ser uma clínica Veterinária de confiança, também contamos com um completo petshop e 
+                farmácia. Nosso
+                petshop oferece uma ampla seleção de produtos de alta qualidade, desde alimentos balanceados e 
+                petiscos
+                deliciosos até brinquedos divertidos e acessórios elegantes para o seu pet. Na nossa farmácia, 
+                voce encontrará
+                uma variedade de medicamentos, produtos de cuidades e suplementos recomendados pelos nossos 
+                veterinários,
+                garantindo que o bem-estar e a saúde do seu amado pet estejam sempre em boas mãos. Tudo o que 
+                voce precisa para
+                cuidar e mimar o seu pet está aqui, no nosso petshop e farmácia, com a mesma dedicação e 
+                qualidade que nos 
+                tornou referencia na área Veterinária.
+            </p>
+        </section>
+
+        <section id="duvidas">
+            <img src="img/faq-img.svg" alt="" width="540" height="540" loading="lazy">
+
+            <div>
+                <h2>Ficou alguma dúvida ?</h2>
+            
+            <div class="duvida">
+                <h3>Quais serviços são oferecidos pela clínica da Petshop</h3>
+                <img src="img/arrow-down.svg" alt="">
+            <p class="paragrafo">A clínica da Petshop oferece uma ampla gama de serviços, incluindo consultas de emegencia 
+            vacinação, cirurgias, tratamento de doenças, cuidados Odontológicos, atendimento de emegencia 
+            24 horas, programs de prevenção de pulgas, carrapatos e vermes, entre outros. Nosso objetivo é 
+            fornecer cuidados abrangentes e personalizados para garantir a 
+            saúde e o bem-estar do seu pet.
+            </p>
+            </div>
+            
+            <div class="duvida">
+                <h3>Quais espécies de animais a clínica Veterinária atende?</h3>
+                <img src="img/arrow-down.svg" alt="">
+                <p class="paragrafo">
+                    A clínica Veterinária da PetLife atende animais de estimação de todas as espécies, incluindo 
+                    cães, gatos,
+                    pássaros, roedores e répteis. Nossos profissonais possuem conhecimento e esperiencia para 
+                    cuidar de 
+                    diferente tipos de animais, oferecendo um atendimentoespecializado e dedicado a cada um 
+                    deles.
+                </p>
+            </div>
+        
+            <div class="duvida">
+                <h3>A clínica da PetLife possui serviços de emergencia?</h3>
+                <img src="img/arrow-down.svg" alt="">
+                <p class="paragrafo">
+                    Sim, a clínica Veterinária da PetLife oferece serviços de emergencia24 horas. Se o seu 
+                    animal de estimação
+                    precisar de atendimento Veterinário imediato fora do horário de expediente, nossa equipe está 
+                    pronto para
+                    ajudar, fornecendo cuidados urgentes e tratamento adequado para garantir o bem-estar do seu 
+                    pet.
+                </p>
+            </div>
+
+            <div class="duvida">
+                <h3>A clínica oferece serviços de banho e tosa?</h3>
+                <img src="img/arrow-down.svg" alt="">
+                <p class="paragrafo">
+                    Sim, a clínica Veterinária da PetLife oferece serviços profissonais de banho e tosa. Nossa 
+                    equipe de profissonais expedientes garante que seu pet receba cuidados adequados,
+                    usando produtos de altas qualidade e técnicas seguras. O banho e tosa ajudam a manter 
+                    a higiene, a saúde da pele e pelagen do seu pet, além de proporcionar uma experiencia
+                    relante e agradável para eles.
+                </p>
+            </div>
+        </section>
+    </main>
+    <!--Seção de rodapé que geralmente contém informações de contato e links adicionais.-->
+    <footer>
+        <div class="duvidas">
+            <img class="logo" src="img/logo.svg" alt="PetLife">
+            <p>Cuidando com amor,  vivendo com alegria: PetLife, onde a vida dos pets è mais feliz</p>
+            
+        </div>
+
+
+        <div>
+            <!--Define um texto forte (normalmente exibido em negrito).-->
+            <strong class="titulo">links ràpidos</strong>
+            <!--Lista de links para navegação rápida.-->
+            <nav>
+            <a href="#inicio">Início</a>
+            <a href="#clinica">Clínica</a>
+            <a href="#farmacia">Farmácia</a>
+            <a href="#duvidas">Dúvidas</a>
+            </nav>
+        </div>
+        
+
+        <div>
+        <strong class="titulo">Encontre-nos</strong>
+        <!--Parágrafos de informações de contato.-->
+        <p>WhatsApp: <a href="https://wa.me/5522987654321" target="_blank">(22) 98765-4321</a></p>
+        <!--Link de e-mail que abre o cliente de e-mail padrão ao clicar.-->
+        <p>Email: <a href="mailto:contato@petlife.com">contato@petlife.com</a></p>
+        <p>Endereco: Av. 7 de Setembro, n* 42, Centro</p>
+        </div>
+    </footer>
+    <div id="criado">
+        Desenvolvimento por Gabriel souza bezerra
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
